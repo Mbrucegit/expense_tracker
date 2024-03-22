@@ -11,6 +11,7 @@
 		4CB3CC8F2BACB4B100BBBF82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3CC8E2BACB4B100BBBF82 /* ContentView.swift */; };
 		4CB3CC912BACB4B300BBBF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3CC902BACB4B300BBBF82 /* Assets.xcassets */; };
 		4CB3CC942BACB4B300BBBF82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3CC932BACB4B300BBBF82 /* Preview Assets.xcassets */; };
+		4CB3CC9B2BADD76F00BBBF82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3CC9A2BADD76F00BBBF82 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4CB3CC8E2BACB4B100BBBF82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CB3CC902BACB4B300BBBF82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB3CC932BACB4B300BBBF82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CB3CC9A2BADD76F00BBBF82 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				4CB3CC8C2BACB4B100BBBF82 /* expense_trackerApp.swift */,
 				4CB3CC8E2BACB4B100BBBF82 /* ContentView.swift */,
+				4CB3CC9A2BADD76F00BBBF82 /* Extensions.swift */,
 				4CB3CC902BACB4B300BBBF82 /* Assets.xcassets */,
 				4CB3CC922BACB4B300BBBF82 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CB3CC8F2BACB4B100BBBF82 /* ContentView.swift in Sources */,
+				4CB3CC9B2BADD76F00BBBF82 /* Extensions.swift in Sources */,
 				4CB3CC8D2BACB4B100BBBF82 /* expense_trackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
