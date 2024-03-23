@@ -18,7 +18,7 @@ struct Transaction: Identifiable, Decodable {
     var categoryId: Int
     var category: String
     let isPending: Bool
-    var IsTransfer: Bool
+    var isTransfer: Bool
     var isExpense: Bool
     var isEdited: Bool
     

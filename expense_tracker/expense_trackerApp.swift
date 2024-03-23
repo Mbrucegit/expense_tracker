@@ -14,7 +14,7 @@ struct expense_trackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(transactionListVM)
+                .environmentObject(transactionListVM )
         }
     }
 }

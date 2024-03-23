@@ -8,16 +8,16 @@
 import Foundation
 import Combine
 
-final class TransactionListViewModel: ObservableObject{
+final class TransactionListViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
     
-    private var cancellables=Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     
     init() {
         getTransactions()
     } //Call getTransactions when class form instance.
     
-    func getTransactions() {
+    func getTransactions()  {
         guard let url = URL(string: "https://designcode.io/data/transactions.json") else {
             print("invalid URL")
             return
@@ -36,7 +36,7 @@ final class TransactionListViewModel: ObservableObject{
             .sink { completion in
                 switch completion {
                 case .failure(let error):
-                    print("Error Fetching transaction", error.localizedDescription)
+                    print("Error Fetching transaction", error)
                 case .finished:
                     print("Finished fecthing transactions")
                 }
@@ -45,7 +45,6 @@ final class TransactionListViewModel: ObservableObject{
                 dump(self?.transactions)
             }
             .store(in: &cancellables)
-                
             }
     }
     
