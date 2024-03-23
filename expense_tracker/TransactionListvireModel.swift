@@ -13,6 +13,10 @@ final class TransactionListViewModel: ObservableObject{
     
     private var cancellables=Set<AnyCancellable>()
     
+    init() {
+        getTransactions()
+    } //Call getTransactions when class form instance.
+    
     func getTransactions() {
         guard let url = URL(string: "https://designcode.io/data/transactions.json") else {
             print("invalid URL")
