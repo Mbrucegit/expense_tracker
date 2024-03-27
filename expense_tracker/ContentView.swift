@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct ContentView: View {
     @EnvironmentObject var transactionListVM: TransactionListViewModel
+//    var demoData: [Double] = [2,4,3,6,8,2,4,3,6,100]
     
     var body: some View {
         NavigationView {
@@ -18,6 +20,10 @@ struct ContentView: View {
                     Text("Overview")
                         .font(.title2)
                         .bold()
+                    let data = transactionListVM.accumulateTransactions()
+                    let totalExpenses = data.last?.1 ?? 0
+                    LineChartView(data: totalExpenses, title:"Title")
+                        .frame(width: 220, height: 220)
                     RecentTransactionList()
                 }
                 .padding()
