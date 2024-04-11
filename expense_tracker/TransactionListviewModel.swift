@@ -9,12 +9,14 @@ import Foundation
 import Combine
 import Collections
 
+//OrderedDictionary is from collection
 typealias TransactionGroup = OrderedDictionary<String, [Transaction]>
 typealias TransactionPrefixSum = [(String, Double)]
 
 final class TransactionListViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
     
+    // Set up parameters with combine
     private var cancellables = Set<AnyCancellable>()
     
     init() {
